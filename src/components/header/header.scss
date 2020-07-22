@@ -1,0 +1,55 @@
+@import "../../colors.scss";
+@import "../../mixin.scss";
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	@include breakpoint(mobileonly) {
+		background-color: green;
+	}
+
+	input {
+		border: none;
+		border-bottom: 1px solid;
+		outline: none;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 5vw;
+		text-transform: uppercase;
+		color: $primary-black;
+		-webkit-text-fill-color: white;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: $primary-black;
+		cursor: pointer;
+	}
+
+	.register {
+		a {
+			text-decoration: none;
+			color: $primary-black;
+			font-size: 12px;
+			@include transition(all, 0.3s, ease-in-out);
+			&:hover {
+				color: $primary-blue;
+			}
+		}
+
+		.favorites {
+			display: inline;
+			margin-left: 2rem;
+
+			span {
+				font-size: 1.5rem;
+				@include transition(all, 0.3s, ease-in-out);
+				cursor: pointer;
+				&:hover {
+					font-weight: 600;
+					color: $favorite;
+				}
+			}
+		}
+	}
+}
