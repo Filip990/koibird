@@ -40,10 +40,5 @@ module.exports = {
 			},
 		],
 	},
-	plugins: [
-		new HtmlWebpackPlugin(),
-		new CopyPlugin({
-			patterns: [{ from: "./src/assets/images", to: "images" }],
-		}),
-	],
+	plugins: [new HtmlWebpackPlugin()],
 };
