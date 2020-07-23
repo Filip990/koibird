@@ -39,21 +39,21 @@
 		margin: 0;
 		font-size: 5vw;
 		text-transform: uppercase;
-		color: $primary-black;
+		color: $black;
 		-webkit-text-fill-color: white;
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $primary-black;
+		-webkit-text-stroke-color: $black;
 		cursor: pointer;
 	}
 
 	.register {
 		a {
 			text-decoration: none;
-			color: $primary-black;
+			color: $black;
 			font-size: 10px;
 			@include transition(all, 0.3s, ease-in-out);
 			&:hover {
-				color: $primary-blue;
+				color: $blue;
 			}
 		}
 
@@ -75,7 +75,10 @@
 }
 .topnav.responsive a {
 	visibility: visible;
-	margin-bottom: 0.5rem;
+	background: $primary;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
 }
 
 #header-links {
@@ -89,13 +92,13 @@
 
 	a {
 		text-decoration: none;
-		color: $primary-black;
+		color: $black;
 		font-size: 10px;
 		font-weight: 600;
 		cursor: pointer;
 		@include transition(all, 0.3s, ease-in-out);
 		&:hover {
-			color: $primary-blue;
+			color: $blue;
 			transform: scale(1.3);
 		}
 	}
@@ -108,6 +111,8 @@
 		display: none;
 		@include breakpoint(mobile) {
 			display: block;
+			background: $primary;
+			width: 100%;
 		}
 	}
 }
