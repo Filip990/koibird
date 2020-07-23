@@ -1,13 +1,33 @@
 @import "../../colors.scss";
 @import "../../mixin.scss";
 
-header {
+@include breakpoint(mobile) {
+	#header-items {
+		flex-direction: column-reverse;
+
+		input {
+			margin-top: 1rem;
+			width: 30vw;
+		}
+
+		.register {
+			margin-left: auto;
+			font-size: 2vw;
+		}
+	}
+	.topnav {
+		flex-direction: column-reverse;
+
+		a {
+			visibility: hidden;
+		}
+	}
+}
+
+#header-items {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	@include breakpoint(mobileonly) {
-		background-color: green;
-	}
 
 	input {
 		border: none;
@@ -30,7 +50,7 @@ header {
 		a {
 			text-decoration: none;
 			color: $primary-black;
-			font-size: 12px;
+			font-size: 10px;
 			@include transition(all, 0.3s, ease-in-out);
 			&:hover {
 				color: $primary-blue;
@@ -50,6 +70,44 @@ header {
 					color: $favorite;
 				}
 			}
+		}
+	}
+}
+.topnav.responsive a {
+	visibility: visible;
+	margin-bottom: 0.5rem;
+}
+
+#header-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+	width: 80%;
+	margin: auto;
+	padding-top: 1rem;
+
+	a {
+		text-decoration: none;
+		color: $primary-black;
+		font-size: 10px;
+		font-weight: 600;
+		cursor: pointer;
+		@include transition(all, 0.3s, ease-in-out);
+		&:hover {
+			color: $primary-blue;
+			transform: scale(1.3);
+		}
+	}
+
+	.menu-icon {
+		border: none;
+		background: transparent;
+		outline: none;
+		cursor: pointer;
+		display: none;
+		@include breakpoint(mobile) {
+			display: block;
 		}
 	}
 }
