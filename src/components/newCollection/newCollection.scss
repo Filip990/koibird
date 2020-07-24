@@ -11,11 +11,13 @@
 
 .new-collection {
 	margin-bottom: 2rem;
+
 	.heading {
 		overflow: hidden;
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 1.5vw;
+
 		span {
 			position: relative;
 			display: inline-block;
@@ -44,6 +46,7 @@
 			img {
 				width: 10vw;
 				@include transition(all, 0.5s, linear);
+				cursor: pointer;
 
 				&:hover {
 					transform: rotateY(180deg);
@@ -57,13 +60,12 @@
 			.shop-now {
 				background: transparent;
 				border: none;
+				outline: none;
 				box-shadow: 0 4px 2px -3px $primary;
-
 				text-transform: uppercase;
 				font-size: 1vw;
 				padding: 4px;
 				margin-top: 8%;
-
 				@include transition(all, 0.3s, linear);
 				cursor: pointer;
 				&:hover {

@@ -1,4 +1,4 @@
-export function buildSlider(container, data) {
+export default function buildSlider(container, data) {
 	const cardsContainer = document.getElementById(container);
 
 	data.forEach((article) => {
