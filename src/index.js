@@ -14,6 +14,7 @@ import newCollection from "./components/newCollection/newCollection.html";
 import categories from "./components/categories/categories.html";
 import bestSellers from "./components/bestSellers/bestSellers.html";
 import promo from "./components/promo/promo.html";
+import footer from "./components/footer/footer.html";
 
 document.body.innerHTML = `
   ${header}
@@ -22,4 +23,5 @@ document.body.innerHTML = `
   ${categories}
   ${bestSellers}
   ${promo}
+  ${footer}
 `;

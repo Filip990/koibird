@@ -1,0 +1,77 @@
+@import "../../colors.scss";
+@import "../../mixin.scss";
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	background: $primary;
+	font-size: 1vw;
+
+	.footer-links {
+		text-transform: uppercase;
+		h4 {
+			text-transform: uppercase;
+			color: $black;
+			-webkit-text-fill-color: $primary;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: $black;
+			font-size: 2vw;
+			margin: 0;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin-right: 1rem;
+				font-weight: 600;
+				padding: 0.5rem;
+				@include transition(all, 0.5s, ease);
+				cursor: pointer;
+
+				&:hover {
+					background: $primary-dark;
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+
+	.newsletter {
+		display: flex;
+		flex-direction: column;
+		padding: 0 2rem;
+		width: 20rem;
+
+		p {
+			margin: 0;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		input {
+			outline: none;
+			margin: 2px;
+		}
+		button {
+			border: none;
+			background: $primary;
+			width: 4rem;
+			padding: 2px;
+			text-align: left;
+			outline: none;
+			@include transition(all, 0.3s, ease);
+			cursor: pointer;
+			&:hover {
+				background: $primary-dark;
+			}
+		}
+
+		.tickbox {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
