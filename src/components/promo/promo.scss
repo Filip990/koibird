@@ -1,0 +1,32 @@
+.promo {
+	position: relative;
+	.hashtag {
+		position: absolute;
+		background: #08d6e3;
+		text-transform: uppercase;
+		left: calc(50% - 50px);
+		bottom: 50%;
+		padding: 4px 10px;
+	}
+	#promo-container {
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		justify-content: space-evenly;
+		margin: auto;
+
+		div {
+			width: 15vw;
+			height: 12vw;
+			margin-bottom: 0.5rem;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			@include transition(all, 0.5s, ease);
+
+			&:hover {
+				background-size: 120%;
+			}
+		}
+	}
+}

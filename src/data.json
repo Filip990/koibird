@@ -88,5 +88,43 @@
 			"image": "/images/womens-leather-gloves.jpg",
 			"price": 110
 		}
+	],
+	"promo": [
+		{
+			"image": "/images/promo-1.jpg"
+		},
+		{
+			"image": "/images/promo-2.jpg"
+		},
+		{
+			"image": "/images/promo-3.jpg"
+		},
+		{
+			"image": "/images/promo-4.jpg"
+		},
+		{
+			"image": "/images/promo-5.jpg"
+		},
+		{
+			"image": "/images/promo-6.jpg"
+		},
+		{
+			"image": "/images/promo-7.jpg"
+		},
+		{
+			"image": "/images/promo-8.jpg"
+		},
+		{
+			"image": "/images/promo-9.jpg"
+		},
+		{
+			"image": "/images/promo-10.jpg"
+		},
+		{
+			"image": "/images/promo-11.jpg"
+		},
+		{
+			"image": "/images/promo-12.jpg"
+		}
 	]
 }
