@@ -56,5 +56,37 @@
 			"name": "jackets",
 			"image": "/images/jackets.jpg"
 		}
+	],
+	"bestSellers": [
+		{
+			"name": "beanie",
+			"image": "/images/beanie.jpg",
+			"price": 45
+		},
+		{
+			"name": "buckle hat",
+			"image": "/images/buckle-hat.jpg",
+			"price": 60
+		},
+		{
+			"name": "cream handbag",
+			"image": "/images/cream-handbag.jpg",
+			"price": 120
+		},
+		{
+			"name": "elegant jacket",
+			"image": "/images/elegant.jpg",
+			"price": 140
+		},
+		{
+			"name": "leather jacket",
+			"image": "/images/womens-leather.jpg",
+			"price": 200
+		},
+		{
+			"name": "leather gloves",
+			"image": "/images/womens-leather-gloves.jpg",
+			"price": 110
+		}
 	]
 }

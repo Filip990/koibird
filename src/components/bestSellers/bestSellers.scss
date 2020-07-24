@@ -1,0 +1,77 @@
+@import "../../mixin.scss";
+
+%heading-line {
+	content: "";
+	position: absolute;
+	top: 50%;
+	border-bottom: 2px solid $primary;
+	width: 592px;
+	margin: 0 20px;
+}
+
+.best-sellers {
+	margin-bottom: 2rem;
+
+	.heading {
+		overflow: hidden;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.5vw;
+
+		span {
+			position: relative;
+			display: inline-block;
+
+			&:before {
+				@extend %heading-line;
+				right: 100%;
+			}
+
+			&:after {
+				@extend %heading-line;
+				left: 100%;
+			}
+		}
+	}
+
+	#best-seller-card-container {
+		display: flex;
+		text-align: center;
+		align-items: baseline;
+		justify-content: space-between;
+
+		.card {
+			font-size: 1vw;
+
+			img {
+				width: 10vw;
+				@include transition(all, 0.5s, linear);
+				cursor: pointer;
+
+				&:hover {
+					transform: rotateY(180deg);
+				}
+			}
+
+			p {
+				margin: 0;
+			}
+
+			.shop-now {
+				background: transparent;
+				border: none;
+				outline: none;
+				box-shadow: 0 4px 2px -3px $primary;
+				text-transform: uppercase;
+				font-size: 1vw;
+				padding: 4px;
+				margin-top: 8%;
+				@include transition(all, 0.3s, ease);
+				cursor: pointer;
+				&:hover {
+					box-shadow: 0 4px 2px -1px $primary;
+				}
+			}
+		}
+	}
+}
