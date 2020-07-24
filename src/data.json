@@ -1,0 +1,34 @@
+{
+	"newInStock": [
+		{
+			"name": "Black Leather",
+			"image": "/images/Black-leather-jacket-for-men-1.jpg",
+			"price": 122
+		},
+		{
+			"name": "Flight Leather",
+			"image": "/images/flight-leather-jacket-front.jpg",
+			"price": 200
+		},
+		{
+			"name": "Traveller",
+			"image": "/images/jacket-travel-100-grey.jpg",
+			"price": 180
+		},
+		{
+			"name": "Leather Cool",
+			"image": "/images/Leather-Jacket-MLJ01-4.jpg",
+			"price": 180
+		},
+		{
+			"name": "Slick Leather",
+			"image": "/images/7_319.jpg",
+			"price": 189
+		},
+		{
+			"name": "Sport Leather",
+			"image": "/images/71gIp9lw-KL._UX522_.jpg",
+			"price": 189
+		}
+	]
+}

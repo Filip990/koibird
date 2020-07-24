@@ -75,7 +75,6 @@
 }
 .topnav.responsive a {
 	visibility: visible;
-	background: $primary;
 	width: 100%;
 	text-align: center;
 	padding: 0.5rem;
@@ -98,7 +97,7 @@
 		cursor: pointer;
 		@include transition(all, 0.3s, ease-in-out);
 		&:hover {
-			color: $blue;
+			color: $primary;
 			transform: scale(1.3);
 		}
 	}
