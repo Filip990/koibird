@@ -18,7 +18,7 @@
 		{
 			"name": "Leather Cool",
 			"image": "/images/Leather-Jacket-MLJ01-4.jpg",
-			"price": 180
+			"price": 170
 		},
 		{
 			"name": "Slick Leather",
@@ -28,7 +28,33 @@
 		{
 			"name": "Sport Leather",
 			"image": "/images/71gIp9lw-KL._UX522_.jpg",
-			"price": 189
+			"price": 210
+		}
+	],
+	"categories": [
+		{
+			"name": "outerwear",
+			"image": "/images/outerwear.jpg"
+		},
+		{
+			"name": "skis",
+			"image": "/images/skis.jpg"
+		},
+		{
+			"name": "knitwear",
+			"image": "/images/knitwear.jpg"
+		},
+		{
+			"name": "accessories",
+			"image": "/images/accessories.jpg"
+		},
+		{
+			"name": "goggles",
+			"image": "/images/goggles.jpg"
+		},
+		{
+			"name": "jackets",
+			"image": "/images/jackets.jpg"
 		}
 	]
 }
