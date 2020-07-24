@@ -1,0 +1,45 @@
+@import "../../mixin.scss";
+@import "../../colors.scss";
+
+.categories {
+	#category-container {
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		justify-content: space-evenly;
+		margin: auto;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 30vw;
+			height: 20vw;
+			margin-bottom: 1rem;
+			background-position: center;
+			background-size: 100%;
+			color: white;
+			font-size: 2vw;
+			font-weight: 600;
+			-webkit-text-stroke: 1px $black;
+			text-transform: uppercase;
+			@include transition(all, 0.5s, ease);
+
+			&:hover {
+				background-size: 120%;
+			}
+
+			.view-category {
+				font-size: 1.2vw;
+				padding: 2px;
+				@include transition(all, 0.5s, ease);
+				cursor: pointer;
+				&:hover {
+					color: $primary;
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+}
