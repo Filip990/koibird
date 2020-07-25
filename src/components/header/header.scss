@@ -1,35 +1,21 @@
 @import "../../colors.scss";
 @import "../../mixin.scss";
 
-@include breakpoint(mobile) {
-	#header-items {
-		flex-direction: column-reverse;
-
-		input {
-			margin-top: 1rem;
-			width: 30vw;
-		}
-
-		.register {
-			margin-left: auto;
-			font-size: 2vw;
-		}
-	}
-	.topnav {
-		flex-direction: column-reverse;
-
-		a {
-			visibility: hidden;
-		}
-	}
-}
-
 #header-items {
+	@include breakpoint(mobile) {
+		flex-direction: column-reverse;
+	}
+
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 
 	input {
+		@include breakpoint(mobile) {
+			margin-top: 1rem;
+			width: 30vw;
+		}
+
 		border: none;
 		border-bottom: 1px solid;
 		outline: none;
@@ -40,30 +26,39 @@
 		font-size: 5vw;
 		text-transform: uppercase;
 		color: $black;
-		-webkit-text-fill-color: white;
+		-webkit-text-fill-color: $white;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: $black;
 		cursor: pointer;
 	}
 
 	.register {
+		@include breakpoint(mobile) {
+			margin-left: auto;
+			font-size: 2vw;
+		}
+
 		a {
+			@include transition(all, 0.3s, ease-in-out);
 			text-decoration: none;
 			color: $black;
 			font-size: 10px;
-			@include transition(all, 0.3s, ease-in-out);
 			&:hover {
 				color: $blue;
 			}
 		}
 
 		.favorites {
+			@include breakpoint(mobile) {
+				display: block;
+			}
+
 			display: inline;
 			margin-left: 2rem;
 
 			span {
-				font-size: 1.5rem;
 				@include transition(all, 0.3s, ease-in-out);
+				font-size: 1.5rem;
 				cursor: pointer;
 				&:hover {
 					font-weight: 600;
@@ -73,29 +68,41 @@
 		}
 	}
 }
-.topnav.responsive a {
-	visibility: visible;
-	width: 100%;
-	text-align: center;
-	padding: 0.5rem;
-}
 
-#header-links {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+.topnav {
 	text-transform: uppercase;
 	width: 80%;
 	margin: auto;
 	padding-top: 1rem;
 
+	@include breakpoint(mobile) {
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	div {
+		@include breakpoint(mobile) {
+			display: flex;
+			flex-direction: column;
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+		}
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		transition: all 0.5s ease-in-out;
+	}
+
 	a {
+		transition: all 0.3s ease-in-out;
+		padding: 0.5rem;
 		text-decoration: none;
 		color: $black;
 		font-size: 10px;
 		font-weight: 600;
 		cursor: pointer;
-		@include transition(all, 0.3s, ease-in-out);
 		&:hover {
 			color: $primary;
 			transform: scale(1.3);
@@ -103,15 +110,29 @@
 	}
 
 	.menu-icon {
+		@include breakpoint(mobile) {
+			display: block;
+			background: $primary-light;
+			width: 100%;
+		}
 		border: none;
 		background: transparent;
 		outline: none;
 		cursor: pointer;
 		display: none;
-		@include breakpoint(mobile) {
-			display: block;
-			background: $primary;
+	}
+}
+
+.topnav.visible {
+	display: flex;
+
+	div {
+		opacity: 1;
+		height: 140px;
+
+		a {
 			width: 100%;
+			text-align: center;
 		}
 	}
 }
