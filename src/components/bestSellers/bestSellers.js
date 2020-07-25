@@ -1,8 +1,9 @@
 import data from "../../data.json";
-import buildSlider from "../../sliderBuilder";
+import buildSlider from "../../sliderBuilder/sliderBuilder";
 
 const bestSellers = data.bestSellers.map((item) => item);
 
 window.addEventListener("load", function () {
-	buildSlider("best-seller-card-container", bestSellers);
+	const sliderContainer = document.getElementById("best-seller-slider");
+	buildSlider(sliderContainer, bestSellers);
 });
