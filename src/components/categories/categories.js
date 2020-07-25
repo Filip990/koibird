@@ -15,7 +15,8 @@ window.addEventListener("load", function () {
 		shopNow.className = "view-category";
 		img.style.backgroundImage = `url(${category.image})`;
 
-		img.append(name, shopNow);
-		container.append(img);
+		img.appendChild(name);
+		img.appendChild(shopNow);
+		container.appendChild(img);
 	});
 });

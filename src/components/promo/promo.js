@@ -10,6 +10,6 @@ window.addEventListener("load", function () {
 
 		img.style.backgroundImage = `url(${item.image})`;
 
-		container.append(img);
+		container.appendChild(img);
 	});
 });

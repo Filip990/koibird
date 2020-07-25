@@ -2,15 +2,27 @@
 @import "../colors.scss";
 
 %nav-btn {
+	@include transition(all, 0.5s, ease);
 	position: absolute;
+	font-size: 2vw;
+	font-weight: 800;
+	color: $primary;
+	background: $white;
 	width: 32px;
 	height: 100%;
-	background: none;
 	border: none;
 	outline: none;
 	padding: 0;
-	background: #ccc;
 	cursor: pointer;
+
+	&:hover {
+		background: $primary-light;
+	}
+	&:disabled {
+		background: $white;
+		color: $grey;
+		cursor: default;
+	}
 }
 
 .slider-container {
@@ -18,6 +30,7 @@
 	display: flex;
 	padding: 0 32px;
 	overflow: hidden;
+	text-transform: uppercase;
 
 	.btn-prev {
 		@extend %nav-btn;
@@ -33,6 +46,7 @@
 	.cards-container {
 		@include transition(all, 0.5s, ease-in-out);
 		display: flex;
+		flex: 0 0 auto;
 		width: 100%;
 		margin: 0;
 	}
@@ -55,6 +69,21 @@
 
 			&:hover {
 				transform: rotateY(180deg);
+			}
+		}
+
+		.favorite {
+			align-self: flex-end;
+			font-size: 2vw;
+
+			span {
+				margin-right: 6vw;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					color: $favorite;
+				}
 			}
 		}
 

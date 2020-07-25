@@ -47,6 +47,9 @@ function createSliderCard(cardData) {
 	return `
     <div class="card">
       <img src="${cardData.image}">
+      <div class="favorite">
+      <span>&#9825;</span>
+      </div>
       <p>${cardData.name}</p>
       <div>&#8356; ${cardData.price}</div>
       <button>Shop now</button>
