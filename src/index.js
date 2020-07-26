@@ -1,11 +1,11 @@
 import "./index.scss";
 
 //Imports for webpack
-import headerjs from "./components/header/header";
-import newCollectionjs from "./components/newCollection/newCollection";
-import categoriesjs from "./components/categories/categories";
-import bestSellersjs from "./components/bestSellers/bestSellers";
-import promojs from "./components/promo/promo";
+import "./components/header/header";
+import "./components/newCollection/newCollection";
+import "./components/categories/categories";
+import "./components/bestSellers/bestSellers";
+import "./components/promo/promo";
 //End of imports for webpack
 
 import header from "./components/header/header.html";

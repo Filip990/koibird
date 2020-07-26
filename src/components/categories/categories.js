@@ -1,22 +1,19 @@
 import data from "../../data.json";
 
-const categories = data.categories.map((category) => category);
-
 window.addEventListener("load", function () {
 	const container = document.getElementById("category-container");
 
-	categories.forEach((category) => {
-		const img = document.createElement("div");
-		const name = document.createElement("p");
-		const shopNow = document.createElement("span");
-
-		name.innerHTML += category.name;
-		shopNow.innerHTML += "shop now  &#x3e;";
-		shopNow.className = "view-category";
-		img.style.backgroundImage = `url(${category.image})`;
-
-		img.appendChild(name);
-		img.appendChild(shopNow);
-		container.appendChild(img);
-	});
+	container.innerHTML = data.categories.reduce(
+		(acc, item) => acc + createCategory(item),
+		""
+	);
 });
+
+function createCategory(item) {
+	return `
+    <div style="background-image: url(&quot;${item.image}&quot;);">
+      <p>${item.name}</p>
+      <span class="view-category">shop now &gt;</span>
+    </div>
+  `;
+}

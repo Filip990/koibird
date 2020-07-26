@@ -2,129 +2,129 @@
 	"newInStock": [
 		{
 			"name": "Black Leather",
-			"image": "/images/Black-leather-jacket-for-men-1.jpg",
+			"image": "./images/Black-leather-jacket-for-men-1.jpg",
 			"price": 122
 		},
 		{
 			"name": "Flight Leather",
-			"image": "/images/flight-leather-jacket-front.jpg",
+			"image": "./images/flight-leather-jacket-front.jpg",
 			"price": 200
 		},
 		{
 			"name": "Traveller",
-			"image": "/images/jacket-travel-100-grey.jpg",
+			"image": "./images/jacket-travel-100-grey.jpg",
 			"price": 180
 		},
 		{
 			"name": "Leather Cool",
-			"image": "/images/Leather-Jacket-MLJ01-4.jpg",
+			"image": "./images/Leather-Jacket-MLJ01-4.jpg",
 			"price": 170
 		},
 		{
 			"name": "Slick Leather",
-			"image": "/images/7_319.jpg",
+			"image": "./images/7_319.jpg",
 			"price": 189
 		},
 		{
 			"name": "Sport Leather",
-			"image": "/images/71gIp9lw-KL._UX522_.jpg",
+			"image": "./images/71gIp9lw-KL._UX522_.jpg",
 			"price": 210
 		}
 	],
 	"categories": [
 		{
 			"name": "outerwear",
-			"image": "/images/outerwear.jpg"
+			"image": "./images/outerwear.jpg"
 		},
 		{
 			"name": "skis",
-			"image": "/images/skis.jpg"
+			"image": "./images/skis.jpg"
 		},
 		{
 			"name": "knitwear",
-			"image": "/images/knitwear.jpg"
+			"image": "./images/knitwear.jpg"
 		},
 		{
 			"name": "accessories",
-			"image": "/images/accessories.jpg"
+			"image": "./images/accessories.jpg"
 		},
 		{
 			"name": "goggles",
-			"image": "/images/goggles.jpg"
+			"image": "./images/goggles.jpg"
 		},
 		{
 			"name": "jackets",
-			"image": "/images/jackets.jpg"
+			"image": "./images/jackets.jpg"
 		}
 	],
 	"bestSellers": [
 		{
 			"name": "beanie",
-			"image": "/images/beanie.jpg",
+			"image": "./images/beanie.jpg",
 			"price": 45
 		},
 		{
 			"name": "buckle hat",
-			"image": "/images/buckle-hat.jpg",
+			"image": "./images/buckle-hat.jpg",
 			"price": 60
 		},
 		{
 			"name": "cream handbag",
-			"image": "/images/cream-handbag.jpg",
+			"image": "./images/cream-handbag.jpg",
 			"price": 120
 		},
 		{
 			"name": "elegant jacket",
-			"image": "/images/elegant.jpg",
+			"image": "./images/elegant.jpg",
 			"price": 140
 		},
 		{
 			"name": "leather jacket",
-			"image": "/images/womens-leather.jpg",
+			"image": "./images/womens-leather.jpg",
 			"price": 200
 		},
 		{
 			"name": "leather gloves",
-			"image": "/images/womens-leather-gloves.jpg",
+			"image": "./images/womens-leather-gloves.jpg",
 			"price": 110
 		}
 	],
 	"promo": [
 		{
-			"image": "/images/promo-1.jpg"
+			"image": "./images/promo-1.jpg"
 		},
 		{
-			"image": "/images/promo-2.jpg"
+			"image": "./images/promo-2.jpg"
 		},
 		{
-			"image": "/images/promo-3.jpg"
+			"image": "./images/promo-3.jpg"
 		},
 		{
-			"image": "/images/promo-4.jpg"
+			"image": "./images/promo-4.jpg"
 		},
 		{
-			"image": "/images/promo-5.jpg"
+			"image": "./images/promo-5.jpg"
 		},
 		{
-			"image": "/images/promo-6.jpg"
+			"image": "./images/promo-6.jpg"
 		},
 		{
-			"image": "/images/promo-7.jpg"
+			"image": "./images/promo-7.jpg"
 		},
 		{
-			"image": "/images/promo-8.jpg"
+			"image": "./images/promo-8.jpg"
 		},
 		{
-			"image": "/images/promo-9.jpg"
+			"image": "./images/promo-9.jpg"
 		},
 		{
-			"image": "/images/promo-10.jpg"
+			"image": "./images/promo-10.jpg"
 		},
 		{
-			"image": "/images/promo-11.jpg"
+			"image": "./images/promo-11.jpg"
 		},
 		{
-			"image": "/images/promo-12.jpg"
+			"image": "./images/promo-12.jpg"
 		}
 	]
 }

@@ -4,16 +4,15 @@
 .categories {
 	#category-container {
 		display: flex;
-		flex-direction: row;
-		flex-flow: wrap;
-		justify-content: space-evenly;
+		flex-flow: row wrap;
+		justify-content: space-around;
 		margin: auto;
 
 		div {
-			transition: all 0.5s ease;
 			@include breakpoint(tablet) {
 				width: 45vw;
 			}
+			transition: all 0.5s ease;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -23,7 +22,7 @@
 			margin-bottom: 1rem;
 			background-position: center;
 			background-size: 100%;
-			color: white;
+			color: $white;
 			font-size: 2vw;
 			font-weight: 600;
 			-webkit-text-stroke: 1px $black;
@@ -38,6 +37,7 @@
 				padding: 2px;
 				transition: all 0.5s ease;
 				cursor: pointer;
+
 				&:hover {
 					color: $primary;
 					transform: scale(1.2);
