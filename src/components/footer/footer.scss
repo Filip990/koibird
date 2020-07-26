@@ -10,6 +10,7 @@
 
 	.footer-links {
 		text-transform: uppercase;
+
 		h4 {
 			text-transform: uppercase;
 			color: $black;
@@ -29,6 +30,7 @@
 					display: list-item;
 					padding: 0;
 				}
+
 				display: inline-block;
 				margin-right: 1rem;
 				font-weight: 600;
@@ -47,19 +49,23 @@
 	.newsletter {
 		padding: 0 2rem;
 		width: 20rem;
+
 		.sign-up {
 			display: flex;
 			flex-direction: column;
 		}
+
 		input {
 			@include breakpoint(mobile) {
 				padding: 0;
 			}
+
 			border: none;
 			outline: none;
 			margin: 2px;
 			padding: 4px;
 		}
+
 		button {
 			border: none;
 			background: $primary;
@@ -70,6 +76,7 @@
 			outline: none;
 			transition: all 0.3s ease;
 			cursor: pointer;
+
 			&:hover {
 				background: $primary-dark;
 			}
