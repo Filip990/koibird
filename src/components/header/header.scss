@@ -39,7 +39,8 @@
 		}
 
 		a {
-			@include transition(all, 0.3s, ease-in-out);
+			transition: all 0.3s ease-in-out;
+
 			text-decoration: none;
 			color: $black;
 			font-size: 10px;
@@ -57,7 +58,8 @@
 			margin-left: 2rem;
 
 			span {
-				@include transition(all, 0.3s, ease-in-out);
+				transition: all 0.3s ease-in-out;
+
 				font-size: 1.5rem;
 				cursor: pointer;
 				&:hover {
@@ -115,6 +117,9 @@
 			background: $primary-light;
 			width: 100%;
 		}
+		transition: all 0.3s ease;
+		line-height: 1;
+		margin: 0 auto 1rem auto;
 		border: none;
 		background: transparent;
 		outline: none;
@@ -125,7 +130,10 @@
 
 .topnav.visible {
 	display: flex;
-
+	.menu-icon {
+		width: 70%;
+		transition: all 0.3s ease;
+	}
 	div {
 		opacity: 1;
 		height: 140px;
