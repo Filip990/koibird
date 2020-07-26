@@ -9,12 +9,16 @@
 		</ul>
 	</div>
 	<div class="newsletter">
-		<p>sign up for our newsletter</p>
-		<input type="email" />
-		<span class="tickbox">
-			<input type="checkbox" />
-			<span>GDPR tick box</span>
-		</span>
-		<button>Submit &#x3e;</button>
+		<form>
+			<label for="sign-up" class="sign-up"
+				>sign up for our newsletter
+				<input type="email" id="sign-up" required />
+			</label>
+			<label for="tickbox" class="tickbox">
+				<input type="checkbox" id="tickbox" required />
+				GDPR tickbox
+			</label>
+			<button type="submit">Submit</button>
+		</form>
 	</div>
 </footer>

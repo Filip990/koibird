@@ -27,12 +27,13 @@
 			li {
 				@include breakpoint(tablet) {
 					display: list-item;
+					padding: 0;
 				}
 				display: inline-block;
 				margin-right: 1rem;
 				font-weight: 600;
 				padding: 0.5rem;
-				@include transition(all, 0.5s, ease);
+				transition: all 0.5s ease;
 				cursor: pointer;
 
 				&:hover {
@@ -44,19 +45,20 @@
 	}
 
 	.newsletter {
-		display: flex;
-		flex-direction: column;
 		padding: 0 2rem;
 		width: 20rem;
-
-		p {
-			margin: 0;
-			text-align: left;
-			text-transform: uppercase;
+		.sign-up {
+			display: flex;
+			flex-direction: column;
 		}
 		input {
+			@include breakpoint(mobile) {
+				padding: 0;
+			}
+			border: none;
 			outline: none;
 			margin: 2px;
+			padding: 4px;
 		}
 		button {
 			border: none;
@@ -64,9 +66,9 @@
 			border-radius: 15%;
 			width: 4rem;
 			padding: 10px 5px;
-			text-align: left;
+			text-align: center;
 			outline: none;
-			@include transition(all, 0.3s, ease);
+			transition: all 0.3s ease;
 			cursor: pointer;
 			&:hover {
 				background: $primary-dark;
@@ -76,6 +78,7 @@
 		.tickbox {
 			display: flex;
 			align-items: center;
+			cursor: pointer;
 		}
 	}
 }

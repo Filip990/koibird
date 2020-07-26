@@ -2,7 +2,7 @@
 @import "../colors.scss";
 
 %nav-btn {
-	@include transition(all, 0.5s, ease);
+	transition: all 0.5s ease;
 	position: absolute;
 	font-size: 2vw;
 	font-weight: 800;
@@ -44,7 +44,7 @@
 	}
 
 	.cards-container {
-		@include transition(all, 0.5s, ease-in-out);
+		transition: all 0.5s ease-in-out;
 		display: flex;
 		flex: 0 0 auto;
 		width: 100%;
@@ -59,10 +59,10 @@
 		flex-direction: column;
 		flex: 0 0 auto;
 		padding: 2% 0;
-		font-size: 1vw;
+		font-size: 0.8vw;
 
 		img {
-			@include transition(all, 0.5s, linear);
+			transition: all 0.5s ease-in-out;
 			width: 10vw;
 			margin: auto;
 			cursor: pointer;
@@ -92,13 +92,13 @@
 		}
 
 		button {
-			@include transition(all, 0.3s, ease);
+			transition: all 0.3s ease;
 			background: transparent;
 			border: none;
 			outline: none;
 			box-shadow: 0 4px 2px -3px $primary;
 			text-transform: uppercase;
-			font-size: 1vw;
+			font-size: 0.8vw;
 			padding: 4px;
 			margin-top: 6%;
 			cursor: pointer;

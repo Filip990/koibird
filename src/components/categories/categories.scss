@@ -10,7 +10,7 @@
 		margin: auto;
 
 		div {
-			@include transition(all, 0.5s, ease);
+			transition: all 0.5s ease;
 			@include breakpoint(tablet) {
 				width: 45vw;
 			}
@@ -36,7 +36,7 @@
 			.view-category {
 				font-size: 1.2vw;
 				padding: 2px;
-				@include transition(all, 0.5s, ease);
+				transition: all 0.5s ease;
 				cursor: pointer;
 				&:hover {
 					color: $primary;
