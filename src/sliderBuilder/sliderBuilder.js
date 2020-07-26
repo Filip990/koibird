@@ -3,9 +3,8 @@ import "./sliderBuilder.scss";
 function buildSlider(targetElement, data) {
 	targetElement.innerHTML = createSliderContainer();
 	const cardsContainer = targetElement.querySelector(".cards-container");
-	const [previousButton, nextButton] = targetElement.querySelectorAll(
-		".nav-button"
-	);
+	const previousButton = targetElement.querySelector(".btn-prev");
+	const nextButton = targetElement.querySelector(".btn-next");
 
 	let offset = 0;
 
@@ -47,9 +46,7 @@ function createSliderCard(cardData) {
 	return `
     <div class="card">
       <img src="${cardData.image}">
-      <div class="favorite">
-      <span>&#9825;</span>
-      </div>
+      <div class="favorite">&#9825;</div>
       <p>${cardData.name}</p>
       <div>&#8356; ${cardData.price}</div>
       <button>Shop now</button>

@@ -49,7 +49,8 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: "file-loader",
 				options: {
-					name: "/images/[name].[ext]"
+					name: "[name].[ext]",
+					publicPath: "images"
 				}
 			}
 		]
